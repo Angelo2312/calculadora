@@ -67,12 +67,13 @@ class Ui_MainWindow(object):
         self.clearButton.setSizePolicy(sizePolicy)
         self.clearButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
-"color:rgb(221, 0, 0);\n"
+"color: rgb(255, 0, 0);\n"
 "background-color: rgb(111, 111, 111);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"background-color: rgb(120, 120, 120);\n"
+"background-color: rgb(135, 135, 135);\n"
 "}")
         self.clearButton.setObjectName("clearButton")
         self.horizontalLayout_2.addWidget(self.clearButton)
@@ -87,10 +88,11 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(111, 111, 111);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"background-color: rgb(120, 120, 120);\n"
+"background-color: rgb(135, 135, 135);\n"
 "}")
         self.parenthesesButton.setObjectName("parenthesesButton")
         self.horizontalLayout_2.addWidget(self.parenthesesButton)
@@ -105,10 +107,11 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(111, 111, 111);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"background-color: rgb(120, 120, 120);\n"
+"background-color: rgb(135, 135, 135);\n"
 "}")
         self.percentageButton.setObjectName("percentageButton")
         self.horizontalLayout_2.addWidget(self.percentageButton)
@@ -122,11 +125,12 @@ class Ui_MainWindow(object):
         self.plusButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(208, 128, 0);\n"
+"    background-color: rgb(0, 176, 26);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"    background-color: rgb(223, 145, 0);\n"
+"    background-color: rgb(0, 199, 27);\n"
 "}")
         self.plusButton.setObjectName("plusButton")
         self.horizontalLayout_2.addWidget(self.plusButton)
@@ -148,6 +152,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -166,6 +171,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -184,6 +190,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -198,15 +205,20 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.minusButton.sizePolicy().hasHeightForWidth())
         self.minusButton.setSizePolicy(sizePolicy)
+        self.minusButton.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         self.minusButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(208, 128, 0);\n"
+"    background-color: rgb(0, 176, 26);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"    background-color: rgb(223, 145, 0);\n"
+"    background-color: rgb(0, 199, 27);\n"
 "}")
+        self.minusButton.setAutoDefault(False)
+        self.minusButton.setDefault(False)
+        self.minusButton.setFlat(False)
         self.minusButton.setObjectName("minusButton")
         self.horizontalLayout_3.addWidget(self.minusButton)
         self.verticalLayout.addWidget(self.frame_3)
@@ -227,6 +239,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -245,6 +258,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -263,6 +277,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -280,16 +295,18 @@ class Ui_MainWindow(object):
         self.divisionButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(208, 128, 0);\n"
+"background-color: rgb(0, 176, 26);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"    background-color: rgb(223, 145, 0);\n"
+"    background-color: rgb(0, 199, 27);\n"
 "}")
         self.divisionButton.setObjectName("divisionButton")
         self.horizontalLayout_4.addWidget(self.divisionButton)
         self.verticalLayout.addWidget(self.frame_4)
         self.frame_5 = QtWidgets.QFrame(self.frame)
+        self.frame_5.setEnabled(True)
         self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
@@ -306,6 +323,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -324,6 +342,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -342,6 +361,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -359,11 +379,12 @@ class Ui_MainWindow(object):
         self.timesButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
-"    background-color: rgb(208, 128, 0);\n"
+"    background-color: rgb(0, 176, 26);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"    background-color: rgb(223, 145, 0);\n"
+"    background-color: rgb(0, 199, 27);\n"
 "}")
         self.timesButton.setObjectName("timesButton")
         self.horizontalLayout_5.addWidget(self.timesButton)
@@ -385,6 +406,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -403,6 +425,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -421,6 +444,7 @@ class Ui_MainWindow(object):
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(75, 75, 75);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
@@ -438,11 +462,12 @@ class Ui_MainWindow(object):
         self.equalButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
-"background-color: rgb(255, 170, 0);\n"
+"    background-color: rgb(29, 221, 0);\n"
+"border-radius: 15px;\n"
 "}\n"
 "\n"
 "QPushButton::hover{\n"
-"    background-color: rgb(255, 204, 0);\n"
+"    background-color: rgb(17, 255, 0);\n"
 "}")
         self.equalButton.setObjectName("equalButton")
         self.horizontalLayout_6.addWidget(self.equalButton)
