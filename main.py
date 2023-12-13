@@ -89,7 +89,23 @@ class MainWindow(QtWidgets.QMainWindow):
                 saida = ' '
                 saida += ultimo
 
+            
+
+            ponto = 0
+
+            for algarismo in saida:
+
+                if algarismo == '.':
+                    ponto +=1
+
+                if algarismo in self.operacoes:
+                    ponto = 0
+                
+                if ponto == 2:
+                    saida = saida[:-1]
+
             self.ui.outputLabel.setText(saida)
+
 
 if __name__ == "__main__":
 
