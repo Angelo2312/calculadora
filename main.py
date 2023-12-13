@@ -37,6 +37,10 @@ class MainWindow(QtWidgets.QMainWindow):
             saida = self.ui.outputLabel.text() 
             try:
                 negativo = float(saida ) * -1
+
+                if (negativo - int(negativo)) == 0:
+                    negativo = int(negativo)
+
                 self.ui.outputLabel.setText(str(negativo))
             except:
                 self.ui.outputLabel.setText('SYNTAX ERROR')
