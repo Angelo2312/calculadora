@@ -163,7 +163,7 @@ background-color: rgb(135, 135, 135);
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="parenthesesButton">
+           <widget class="QPushButton" name="deleteButton">
             <property name="enabled">
              <bool>true</bool>
             </property>

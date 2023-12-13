@@ -77,14 +77,14 @@ class Ui_MainWindow(object):
 "}")
         self.clearButton.setObjectName("clearButton")
         self.horizontalLayout_2.addWidget(self.clearButton)
-        self.parenthesesButton = QtWidgets.QPushButton(self.frame_2)
-        self.parenthesesButton.setEnabled(True)
+        self.deleteButton = QtWidgets.QPushButton(self.frame_2)
+        self.deleteButton.setEnabled(True)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.parenthesesButton.sizePolicy().hasHeightForWidth())
-        self.parenthesesButton.setSizePolicy(sizePolicy)
-        self.parenthesesButton.setStyleSheet("QPushButton{\n"
+        sizePolicy.setHeightForWidth(self.deleteButton.sizePolicy().hasHeightForWidth())
+        self.deleteButton.setSizePolicy(sizePolicy)
+        self.deleteButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
 "color:rgb(255, 65, 65);\n"
 "background-color: rgb(111, 111, 111);\n"
@@ -94,8 +94,8 @@ class Ui_MainWindow(object):
 "QPushButton::hover{\n"
 "background-color: rgb(135, 135, 135);\n"
 "}")
-        self.parenthesesButton.setObjectName("parenthesesButton")
-        self.horizontalLayout_2.addWidget(self.parenthesesButton)
+        self.deleteButton.setObjectName("deleteButton")
+        self.horizontalLayout_2.addWidget(self.deleteButton)
         self.percentageButton = QtWidgets.QPushButton(self.frame_2)
         self.percentageButton.setEnabled(True)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
@@ -482,7 +482,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Calculadora"))
         self.clearButton.setText(_translate("MainWindow", "AC"))
-        self.parenthesesButton.setText(_translate("MainWindow", "C"))
+        self.deleteButton.setText(_translate("MainWindow", "C"))
         self.percentageButton.setText(_translate("MainWindow", "%"))
         self.plusButton.setText(_translate("MainWindow", "+"))
         self.sevenButton.setText(_translate("MainWindow", "7"))
