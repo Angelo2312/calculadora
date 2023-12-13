@@ -67,7 +67,7 @@ class Ui_MainWindow(object):
         self.clearButton.setSizePolicy(sizePolicy)
         self.clearButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
-"color: rgb(255, 0, 0);\n"
+"color:rgb(255, 65, 65);\n"
 "background-color: rgb(111, 111, 111);\n"
 "border-radius: 15px;\n"
 "}\n"
@@ -86,7 +86,7 @@ class Ui_MainWindow(object):
         self.parenthesesButton.setSizePolicy(sizePolicy)
         self.parenthesesButton.setStyleSheet("QPushButton{\n"
 "font: 87 26pt \"Arial Black\";\n"
-"color: rgb(255, 255, 255);\n"
+"color:rgb(255, 65, 65);\n"
 "background-color: rgb(111, 111, 111);\n"
 "border-radius: 15px;\n"
 "}\n"
@@ -481,8 +481,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Calculadora"))
-        self.clearButton.setText(_translate("MainWindow", "C"))
-        self.parenthesesButton.setText(_translate("MainWindow", "()"))
+        self.clearButton.setText(_translate("MainWindow", "AC"))
+        self.parenthesesButton.setText(_translate("MainWindow", "C"))
         self.percentageButton.setText(_translate("MainWindow", "%"))
         self.plusButton.setText(_translate("MainWindow", "+"))
         self.sevenButton.setText(_translate("MainWindow", "7"))

@@ -148,7 +148,7 @@ background-color: rgb(0, 0, 0);</string>
             <property name="styleSheet">
              <string notr="true">QPushButton{
 font: 87 26pt &quot;Arial Black&quot;;
-color: rgb(255, 0, 0);
+color:rgb(255, 65, 65);
 background-color: rgb(111, 111, 111);
 border-radius: 15px;
 }
@@ -158,7 +158,7 @@ background-color: rgb(135, 135, 135);
 }</string>
             </property>
             <property name="text">
-             <string>C</string>
+             <string>AC</string>
             </property>
            </widget>
           </item>
@@ -176,7 +176,7 @@ background-color: rgb(135, 135, 135);
             <property name="styleSheet">
              <string notr="true">QPushButton{
 font: 87 26pt &quot;Arial Black&quot;;
-color: rgb(255, 255, 255);
+color:rgb(255, 65, 65);
 background-color: rgb(111, 111, 111);
 border-radius: 15px;
 }
@@ -186,7 +186,7 @@ background-color: rgb(135, 135, 135);
 }</string>
             </property>
             <property name="text">
-             <string>()</string>
+             <string>C</string>
             </property>
            </widget>
           </item>
